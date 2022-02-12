@@ -49,6 +49,18 @@ def main(rep):
             rep
         )
 
+        print(f'''
+Hello,
+
+Please find attached a grievance concerning the loss of health \
+insurance for {name.replace("-", " ")} in {mentor.replace("-", " ")}\'s lab. \
+This loss of coverage is in violation of the CBA, including but not limited \
+to Article 9.
+
+Thank you, 
+{rep.replace("-", " ")}
+GRU Steward''')
+
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         print('Give your name as an argument, in quotes.')
